@@ -14,7 +14,8 @@
     "redux-observable": "^1.1.0",
     "rxjs":"^6.5.2",
     "react-redux": "^7.1.0",
-    "ethers": "^4.0.30"
+    "ethers": "^4.0.30",
+    "io-ts": "^1.8.6"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
