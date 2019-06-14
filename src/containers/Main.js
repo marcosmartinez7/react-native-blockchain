@@ -25,6 +25,24 @@ const privateKey = "C87509A1C067BBDE78BEB793E6FA76530B6382A4C0241E5E4A9EC0A0F44D
 const wallet = new Wallet(privateKey, provider);
 
 // Ropsten deployed dummy contract
+
+/*
+
+contract Example {
+
+    uint256 public _accum  = 0;
+
+    function increment() public returns (uint256 sum) {
+        _accum++;
+    }
+
+    function get() public view returns (uint256 valor) {
+        return _accum;
+    }
+}
+ */
+*/
+ */
 const abi = [ { "constant": false, "inputs": [], "name": "increment", "outputs": [ { "name": "sum", "type": "uint256" } ], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [], "name": "_accum", "outputs": [ { "name": "", "type": "uint256" } ], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "get", "outputs": [ { "name": "valor", "type": "uint256" } ], "payable": false, "stateMutability": "view", "type": "function" } ]
 const contractAddress = "0xe2bC617C9245d318D460a3261FFD3Bbb93A9268A";
 const contract = new Contract(contractAddress, abi, wallet);
